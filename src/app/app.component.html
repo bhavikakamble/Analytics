@@ -1,1 +1,33 @@
-<p>hello</p>
+<div style="text-align:center">
+  <apx-chart
+    [series]="chartOptions.series"
+    [chart]="chartOptions.chart"
+    [xaxis]="chartOptions.xaxis"
+    [title]="chartOptions.title"
+    [stroke]="chartOptions.stroke"
+    [legend]="chartOptions.legend"
+    [title]="chartOptions.title"
+  ></apx-chart>
+  <!-- <cdk-virtual-scroll-viewport itemSize="20" class="custom-legend-viewport"> -->
+      <ul class="custom-legend-list">
+        <li
+          *ngFor="let item of copiedChartOption"
+          (click)="toggleSeries(item, $event)"
+          class="custom-legend-field"
+          [class.highlighted]="item.isSelected || item.highlighted"
+        >
+        <!-- {{this.copiedChartOption.length}} -->
+          <div [title]="item.name" class="legend-list-circle">
+            <div
+              class="legend-circle"
+              [style.backgroundColor]="item.color"
+            ></div>
+            <p class="legend-text">{{ item.name }}</p>
+          </div>
+          <p class="legend-maxcount">
+            {{ item.maxCount }}
+          </p>
+        </li>
+      </ul>
+    <!-- </cdk-virtual-scroll-viewport> -->
+</div>
