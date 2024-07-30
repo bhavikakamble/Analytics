@@ -1,19 +1,22 @@
-<div style="text-align:center">
-  <apx-chart
-    [series]="chartOptions.series"
-    [chart]="chartOptions.chart"
-    [xaxis]="chartOptions.xaxis"
-    [title]="chartOptions.title"
-    [stroke]="chartOptions.stroke"
-    [legend]="chartOptions.legend"
-    [title]="chartOptions.title"
+<div class="chart flex-center">
+  <div class="graph-element">
+     <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [xaxis]="chartOptions.xaxis"
+      [title]="chartOptions.title"
+      [stroke]="chartOptions.stroke"
+      [legend]="chartOptions.legend"
+      [title]="chartOptions.title"
   ></apx-chart>
-  <!-- <cdk-virtual-scroll-viewport itemSize="20" class="custom-legend-viewport"> -->
-      <ul class="custom-legend-list">
+  </div>
+  <div class="list-element">
+    <!-- <cdk-virtual-scroll-viewport itemSize="20" class="custom-legend-viewport"> -->
+      <ul >
         <li
           *ngFor="let item of copiedChartOption"
           (click)="toggleSeries(item, $event)"
-          class="custom-legend-field"
+          class="custom-legend-field flex-center"
           [class.highlighted]="item.isSelected || item.highlighted"
         >
         <!-- {{this.copiedChartOption.length}} -->
@@ -30,4 +33,5 @@
         </li>
       </ul>
     <!-- </cdk-virtual-scroll-viewport> -->
+  </div>
 </div>

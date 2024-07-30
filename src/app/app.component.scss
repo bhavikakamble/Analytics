@@ -1,0 +1,33 @@
+@import '../assets/styles/colors.scss';
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+// *** common ****
+
+.flex-center{
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart{
+    padding: 2rem;
+    .graph-element{
+        width: 70%;
+        padding: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    }
+    .list-element{
+        width: 15%;
+            .custom-legend-list {
+                 padding: 2rem 0;
+                .legend-list-circle{
+                   
+                }
+            }
+    }
+
+    
+}

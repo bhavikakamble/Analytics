@@ -1,6 +1,6 @@
 export const graphData = [
   {
-    "name": "https://cvp-qa.api.tatamotors/api/wrapper-ams/webhook-api",
+    "name": "https://demo-api",
     "data": [
       [
         1721302200000,
@@ -155,11 +155,12 @@ export const graphData = [
         33
       ]
     ],
+    color:'#7CB9E8',
     "aggregatedCount": 762,
     "maxCount": 78
   },
   {
-    "name": "https://cvp-qa.api.tatamotors/api/wrapper-ams/webhook-api-3",
+    "name": "https://demo-api-2",
     "data": [
       [
         1721302200000,
@@ -274,11 +275,12 @@ export const graphData = [
         12
       ]
     ],
+    color: '#89CFF0',
     "aggregatedCount": 554,
     "maxCount": 58
   },
   {
-    "name": "https://cvp-qa.api.tatamotors/api/wrapper-ams/webhook-api-2",
+    "name": "https://demo-api-3",
     "data": [
       [
         1721302200000,
@@ -365,11 +367,12 @@ export const graphData = [
         8
       ]
     ],
+    color:'#A3C1AD',
     "aggregatedCount": 402,
     "maxCount": 29
   },
   {
-    "name": "https://cvp-qa.api.tatamotors/api/wrapper-ams/webhook-api-4",
+    "name": "https://demo-api-4",
     "data": [
       [
         1721302200000,
@@ -456,6 +459,7 @@ export const graphData = [
         8
       ]
     ],
+    color:'#B2FFFF',
     "aggregatedCount": 402,
     "maxCount": 29
   },
@@ -575,11 +579,12 @@ export const graphData = [
         6
       ]
     ],
+    color:'#B9D9EB',
     "aggregatedCount": 277,
     "maxCount": 29
   },
   {
-    "name": "https://fleetedgeqa.home.tatamotors/fms/marketplace/api-framework/vehicle-tenure",
+    "name": "https://vehicle-tenure",
     "data": [
       [
         1721372400000,
@@ -590,6 +595,7 @@ export const graphData = [
         2
       ]
     ],
+    color:'#99FFFF',
     "aggregatedCount": 4,
     "maxCount": 2
   }
